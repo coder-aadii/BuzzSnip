@@ -1,0 +1,337 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hero-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-section h1 {
+  color: white;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .lead {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  border-radius: 15px 15px 0 0 !important;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs {
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  margin: 0 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.nav-tabs .nav-link.active {
+  background: white;
+  color: #495057;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  height: 8px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  border-radius: 10px;
+}
+
+.badge {
+  font-size: 0.75em;
+  padding: 0.5em 0.75em;
+  border-radius: 8px;
+}
+
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead th {
+  border: none;
+  font-weight: 600;
+  color: #495057;
+  background: #f8f9fa;
+}
+
+.table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(0, 123, 255, 0.05);
+}
+
+.form-control, .form-select {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-range {
+  height: 6px;
+}
+
+.form-range::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.alert {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 15px 15px;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .nav-tabs {
+    flex-direction: column;
+  }
+  
+  .nav-tabs .nav-link {
+    margin: 0.25rem 0;
+  }
+}
+
+/* Loading spinner customization */
+.spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Login Page Specific Styles */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.login-page .card {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.login-page .btn-primary {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.login-page .btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(45deg, #5a67d8, #6b46c1);
+}
+
+.login-page .btn-primary:disabled {
+  background: #6c757d;
+  opacity: 0.6;
+}
+
+/* Admin Badge Styles */
+.badge.bg-success {
+  background: linear-gradient(45deg, #10b981, #059669) !important;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+/* Dropdown Menu Enhancements */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.dropdown-item {
+  border-radius: 6px;
+  margin: 2px 4px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: rgba(102, 126, 234, 0.1);
+  transform: translateX(2px);
+}
+
+.dropdown-item.text-danger:hover {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Loading Animation */
+.spinner-border {
+  animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Security Badge Animation */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.badge.bg-success {
+  animation: pulse 2s infinite;
+}

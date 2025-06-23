@@ -1,0 +1,245 @@
+# ================================
+# BuzzSnip AI Services - Python .gitignore
+# ================================
+
+# ================================
+# ENVIRONMENT & SECRETS
+# ================================
+.env
+.env.local
+.env.development
+.env.production
+*.env
+config.json
+secrets.json
+api_keys.json
+
+# ================================
+# PYTHON
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+env.bak/
+venv.bak/
+
+# ================================
+# AI MODELS & WEIGHTS
+# ================================
+models/
+!models/.gitkeep
+checkpoints/
+weights/
+pretrained/
+
+# Large model files
+*.bin
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.pb
+*.onnx
+*.tflite
+*.pkl
+*.joblib
+
+# Model caches
+huggingface_cache/
+transformers_cache/
+torch_cache/
+.cache/
+
+# ================================
+# STABLE DIFFUSION
+# ================================
+stable-diffusion-models/
+sd-models/
+diffusers/
+controlnet/
+lora/
+embeddings/
+vae/
+
+# ================================
+# VOICE SYNTHESIS
+# ================================
+bark-models/
+tortoise-models/
+tts-models/
+voice-models/
+speaker-embeddings/
+
+# ================================
+# FACE GENERATION & LIP-SYNC
+# ================================
+sadtalker-models/
+wav2lip-models/
+face-models/
+face-checkpoints/
+gfpgan-models/
+
+# ================================
+# UPSCALING MODELS
+# ================================
+real-esrgan-models/
+codeformer-models/
+upscaling-models/
+super-resolution/
+
+# ================================
+# LLM MODELS
+# ================================
+llm-models/
+tinyllama/
+language-models/
+tokenizers/
+
+# ================================
+# DATASETS & TRAINING DATA
+# ================================
+datasets/
+training-data/
+data/raw/
+data/processed/
+data/temp/
+
+# ================================
+# GENERATED CONTENT
+# ================================
+output/
+generated/
+temp/
+processing/
+
+# Generated videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Generated audio
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# Generated images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Temporary processing files
+temp-audio/
+temp-video/
+temp-images/
+temp-faces/
+
+# ================================
+# JUPYTER NOTEBOOKS
+# ================================
+.ipynb_checkpoints
+*.ipynb
+
+# ================================
+# TESTING & COVERAGE
+# ================================
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ================================
+# LOGS
+# ================================
+*.log
+logs/
+ai-service.log
+model-loading.log
+generation.log
+
+# ================================
+# CUDA & GPU
+# ================================
+.nv_cache/
+.nvidia/
+
+# ================================
+# IDE & SYSTEM
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ================================
+# BACKUP FILES
+# ================================
+*.bak
+*.backup
+*.orig
+*backup*
+
+# ================================
+# MONITORING & METRICS
+# ================================
+metrics/
+monitoring/
+performance-logs/
+
+# ================================
+# DOCKER
+# ================================
+.dockerignore
+
+# ================================
+# WANDB (if used for experiment tracking)
+# ================================
+wandb/
+
+# ================================
+# MLflow (if used for ML tracking)
+# ================================
+mlruns/
+mlflow.db

@@ -1,0 +1,150 @@
+{
+  "short_name": "BuzzSnip",
+  "name": "BuzzSnip - AI Video Creator Admin Panel",
+  "description": "Automatically generate and post short, high-quality, lip-synced videos featuring realistic AI personas for Instagram Reels and YouTube Shorts using 100% free, offline, open-source tools.",
+  "version": "1.0.0",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#667eea",
+  "background_color": "#667eea",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "productivity",
+    "business",
+    "utilities",
+    "entertainment"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "BuzzSnip Admin Dashboard - Desktop View"
+    },
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "BuzzSnip Admin Dashboard - Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Create Video",
+      "short_name": "Create",
+      "description": "Start automated video creation",
+      "url": "/?tab=automated",
+      "icons": [
+        {
+          "src": "shortcut-create.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Manage Personas",
+      "short_name": "Personas",
+      "description": "Manage AI personas",
+      "url": "/?tab=personas",
+      "icons": [
+        {
+          "src": "shortcut-personas.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "View Analytics",
+      "short_name": "Analytics",
+      "description": "View post history and analytics",
+      "url": "/?tab=history",
+      "icons": [
+        {
+          "src": "shortcut-analytics.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "short_name": "Settings",
+      "description": "Admin settings and configuration",
+      "url": "/?tab=settings",
+      "icons": [
+        {
+          "src": "shortcut-settings.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "capture_links": "existing-client-navigate",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+buzzsnip",
+      "url": "/?action=%s"
+    }
+  ]
+}

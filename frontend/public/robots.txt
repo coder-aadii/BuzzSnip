@@ -1,0 +1,14 @@
+# BuzzSnip Admin Panel - Robots.txt
+# This is an admin-only application, not for public indexing
+
+User-agent: *
+Disallow: /
+
+# Admin panel should not be indexed by search engines
+# This is a private application for authorized users only
+
+# Contact information
+# For questions about this application, contact the development team
+
+# Sitemap (not applicable for admin panels)
+# Sitemap: https://buzzsnip.ai/sitemap.xml
